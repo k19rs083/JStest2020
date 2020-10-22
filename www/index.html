@@ -3,40 +3,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
-      $(function() {
-        $("#btn").click(function() {
-          main();
+        $(function () {
+            $("#btn").click(function () {
+                main();
+            });
         });
-      });
 
-      function main() {
-          let a = new Array(3);
-        a[0]=10;
-        a[1]=50;
-        a[2]=30;
-        let msg = "";
-        for(let i=0;i<a.length;i++) {
-          msg += i + ":" + a[i] + "<br>";
+        function main() {
+            let a = new Array(3);
+            a[0] = 10;
+            a[1] = 50;
+            a[2] = 30;
+            let msg = "";
+            for (let i = 0; i < a.length; i++) {
+                msg += i + ":" + a[i] + "<br>";
+            }
+            $("#disp1").html(msg);
+            a = [100, 20, -5];
+            msg = "";
+            for (let i = 0; i < a.length; i++) {
+                msg += i + ":" + a[i] + "<br>";
+            }
+            $("#disp2").html(msg);
         }
-        $("#disp1").html(msg);
-          a = [100, 20, -5];
-          msg = "";
-          for(let i=0;i<a.length;i++) {
-           msg += i + ":" + a[i] + "<br>";
-        }
-        $("#disp2").html(msg);
-      }
     </script>
     <title>JavaScript Trainer</title>
 </head>
 <body>
-  <div id="disp1" class="out">DISPLAY 1</div>
-  <div id="disp2" class="out">DISPLAY 2</div>
-  <button id="btn">Run</button>
+<div id="disp1" class="out">DISPLAY 1</div>
+<div id="disp2" class="out">DISPLAY 2</div>
+<button id="btn">Run</button>
 </body>
 </html>

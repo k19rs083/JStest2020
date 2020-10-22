@@ -1,25 +1,25 @@
 /**/
 
-html,body {
-  background: skyblue;
-  height: 100%;
+html, body {
+    background: skyblue;
+    height: 100%;
 }
 
 .out {
-  border: solid 1px black;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 5px;
-  height: 40%;
-  background: white;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    height: 40%;
+    background: white;
 }
 
 #btn {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 #btn::after {
-  content: "▶";
-  color: red;
+    content: "▶";
+    color: red;
 }
 
